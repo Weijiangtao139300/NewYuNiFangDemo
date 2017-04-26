@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="37dp" 
+            android:background="@mipmap/shao"
+            android:layout_marginRight="105dp"/>
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="37dp"
+            android:background="@mipmap/tou"
+            android:layout_marginRight="105dp"/>
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="37dp"
+            android:background="@mipmap/weixin"/>
+        
+    </LinearLayout>
+    
+    
+    <com.liaoinstan.springview.widget.SpringView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scroll">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.youth.banner.Banner
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:id="@+id/banner_home">
+
+                </com.youth.banner.Banner>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/linear_qiandao"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/home_qiandao"
+                            android:background="@mipmap/qian"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="每日签到"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/linear_jifen"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="@mipmap/jifen"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="积分商城"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/linear_duihuan"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="@mipmap/duihuan"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="兑换专区"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/linear_chaxun"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:background="@mipmap/chaxun"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="真伪查询"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                
+               <include
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   layout="@layout/chunji_item"
+                   ></include>
+
+
+               
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/youhui_item"
+                    ></include>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="-- 热门专题 --"/>
+
+                <ImageView
+                    android:id="@+id/image_hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_hot_topics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+                <ImageView
+                    android:id="@+id/image_hot1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_hot_topics1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+                <ImageView
+                    android:id="@+id/image_hot2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_hot_topics2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+                <ImageView
+                    android:id="@+id/image_hot3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_hot_topics3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+
+                <ImageView
+                    android:id="@+id/image_hot4"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_hot_topics4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+
+                <ImageView
+                    android:id="@+id/image_hot5"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_hot_topics5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+
+
+                <ImageView
+                    android:id="@+id/image_hot6"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_hot_topics6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+                <!--<include-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--layout="@layout/hou_item"-->
+                    <!--&gt;</include>-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recy_wei"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+            
+        </ScrollView>
+        
+        
+        
+    </com.liaoinstan.springview.widget.SpringView>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+
+</LinearLayout>

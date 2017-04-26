@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/h">
+    
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                   android:background="@mipmap/classify_facial_mask"/>
+                
+                    
+               <LinearLayout
+                    android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="5dp"
+                    android:layout_height="match_parent"
+                   android:orientation="vertical">
+
+                    <ImageView
+                       android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="2.5dp"
+                        android:background="@mipmap/classify_facial_mask"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2.5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:background="@mipmap/classify_emollient_water"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2.5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/classify_kit"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="2.5dp"
+                        android:background="@mipmap/classify_body_lotion"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2.5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:background="@mipmap/classify_other"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2.5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/classify_man"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+           
+            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="安功效"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="美丽从选对产品开始"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" 
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@mipmap/classify_hydrating"
+                        android:id="@+id/class_image1"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@mipmap/classify_soothing"
+                        android:id="@+id/class_image2"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@mipmap/classify_control_oil"
+                        android:id="@+id/class_image3"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@mipmap/classify_whitening"
+                        android:id="@+id/class_image4"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/classify_firming"
+                        android:id="@+id/class_image5"/>
+                    
+                </LinearLayout>
+                
+                
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                 
+                    android:layout_height="200dp">
+                    
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="2.5dp"
+                            android:background="@mipmap/w2"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="2.5dp"
+                            android:layout_marginTop="2.5dp"
+                            android:background="@mipmap/w3"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="2.5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@mipmap/w4"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="2.5dp"
+                            android:background="@mipmap/w5"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="2.5dp"
+                            android:layout_marginTop="2.5dp"
+                            android:background="@mipmap/w6"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="2.5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@mipmap/w7"/>
+                        
+                    </LinearLayout>
+                    
+                </LinearLayout>
+                
+              
+            </LinearLayout>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="- 明星产品 -"/>
+           
+            
+         <weijiangtao.bwie.com.newyunifangdemo.view.MyGridview
+             android:layout_width="match_parent"
+             android:layout_height="fill_parent"
+             android:numColumns="2"
+             android:id="@+id/class_gridview">
+             
+         </weijiangtao.bwie.com.newyunifangdemo.view.MyGridview>
+            
+            
+            
+           
+            
+        </LinearLayout>
+        
+        
+        
+        
+        
+    </ScrollView>
+    
+    
+    
+    
+    
+    
+
+</LinearLayout>
